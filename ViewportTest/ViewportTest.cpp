@@ -172,7 +172,7 @@ public:
 //	afx_msg void OnIdtbButton2();
 	virtual BOOL OnCommand(WPARAM wParam, LPARAM lParam);
 //	virtual BOOL DestroyWindow();
-	virtual void PostNcDestroy();
+//	virtual void PostNcDestroy();
 };
 
 CAboutDlg::CAboutDlg() : CDialogEx(CAboutDlg::IDD)
@@ -244,11 +244,11 @@ BOOL CAboutDlg::OnCommand(WPARAM wParam, LPARAM lParam)
 //}
 
 
-void CAboutDlg::PostNcDestroy()
-{
-	// TODO: ここに特定なコードを追加するか、もしくは基底クラスを呼び出してください。
-
-	//CDialogEx::PostNcDestroy();
-
-	delete this;
-}
+//void CAboutDlg::PostNcDestroy()
+//{
+//	// TODO: ここに特定なコードを追加するか、もしくは基底クラスを呼び出してください。
+//
+//	//CDialogEx::PostNcDestroy();
+//
+//	//delete this;
+//}
